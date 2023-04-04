@@ -5,7 +5,7 @@ After building 12 slide decks of too many slides each one,
 I wanted to share what I've learnt and loved of using asciidoctor 
 to build them. 
 
-In the demo you'll find tips, tricks and a slide deck *with a logo* that you can reuse!
+In the https://http://asciidoc-slides.8vi.cat[🖥️ demo 💻] you'll find tips, tricks and a slide deck *with a logo* that you can reuse!
 
 I assume you are a bit familiar with asciidoctor or markdown, 
 and if not, that you are not afraid of reading documentation
