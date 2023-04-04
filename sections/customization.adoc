@@ -1,0 +1,55 @@
+////
+CSS custom
+
+Header and footer
+////
+
+== Customizations
+
+=== Custom Styles
+
+Asciidoc compiles to html code and uses CSS for styles. 
+
+Update the file `reveal-override.css` to adapt colors, icon, sizes, widths...
+
+=== Custom Logo
+
+TIP: Easy way: just replace the file called `images/logo.png`
+
+To show the logo when printing, there are two places where we specify the logo. 
+
+.`css/reveal-override.css`
+[source,css]
+----
+include::../css/reveal-override.css[lines=1..6]
+----
+
+=== Custom Logo for printing
+.`docinfo-footer.html`
+[source,html]
+----
+include::../docinfo-footer.html[lines=1]
+----
+.`css/reveal-override.css`
+[source,css]
+----
+include::../css/reveal-override.css[lines=1..6]
+
+
+include::../css/reveal-override.css[lines=21..28]
+----
+
+
+=== Custom footer
+
+Update those lines to personalize the footer.
+
+.`docinfo-footer.html`
+[source,html]
+----
+include::../docinfo-footer.html[lines=2..4]
+----
+
+=== Accent color
+
+Change the occurences of `#009fe3` in the css files for the color you desire.

@@ -1,0 +1,64 @@
+= Asciidoctor reveal.js template 
+:author: @martsec
+
+After building 12 slide decks of too many slides each one, 
+I wanted to share what I've learnt and loved of using asciidoctor 
+to build them. 
+
+In the demo you'll find tips, tricks and a slide deck *with a logo* that you can reuse!
+
+I assume you are a bit familiar with asciidoctor or markdown, 
+and if not, that you are not afraid of reading documentation
+and testing things out. 
+
+== 👩‍💻 Why writing your presentations as code
+
+* Versioning in visual editors sucks.
+* You are used to version your code already.
+* You prefer to not spend ages animating and aligning each element.
+* Your animated slides now don't depend of people buying licenses to Microsoft.
+
+This might not be for you if you are not comfortable with a plain text editor and prefer the nicer(?) user interface of LibreOffice or Microsoft Office.
+
+== 🔨 Installing
+
+. Clone this git repository
+. Install asiidoctor reveal-js https://github.com/asciidoctor/asciidoctor-reveal.js/releases/tag/v5.0.0-rc.1[v5.0.0-rc.1]
+
+TIP: You can download the executable directly from the "Assets" section
+
+== ✍🏾 Writing slides
+
+You are going to mostly write text with a bit of flavored extras. 
+It helps focusing on what you want to tell instead of on formatting. 
+
+Best practices:
+
+* Split your slides in different sections and put those in separated files.
+* Have your code in a separate file and use includes.
+* Use images and diagrams.
+* Keep the text short.
+* Use lists and icons.
+* Upload your "code" to a git service (e.g. gitlab, github) as you do with normal code.
+
+
+== 🎁🌐 Compiling to HTML page
+
+`./asciidoctor-revealjs presentation.adoc`
+
+Then, open it with your browser and that's it! You can also serve this in a github page for everyone to enjoy.
+
+
+== 🖨️ Obtaining a PDF and printing
+
+1. Compile to HTML
+2. Use Microsoft edge to go to the print version `file:///.../s1.html?print-pdf`. It's the browser that's respecting more the format. Chrome should also be enough but I've been having some challenges.
+3. Print using "save as PDF". File will be big since it will include all the images in their high definition magnificency. 
+4. Upload the file to https://smallpdf.com/compress-pdf[small PDF] or a similar service to compress it down. The free version is enough
+
+For more information check https://revealjs.com/pdf-export/[Reveal.js PDF export] documentation.
+
+
+== ❌ Not supported
+
+Asciidoctor reveal.js does not support compiling plantUML diagrams, like we are used to with the normal version. If you know how to do it, please contribute!

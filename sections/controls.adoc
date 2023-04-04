@@ -1,0 +1,47 @@
+== Controls
+
+_Press icon:long-arrow-alt-down[] for the next slide_
+
+=== Navigation
+
+icon:long-arrow-alt-right[] for next section.
+
+icon:long-arrow-alt-down[] next slide in a section.
+
+Press `o` for _overview_.
+
+Press `m` to obtain the menu.
+
+=== Notes
+Press `s` to open notes (allow popups and you might need to press `s` twice)
+
+[source,asciidoc]
+....
+=== Notes
+Press `s` to open notes  (allow popups and you might need to press `s` twice)
+
+[.notes]
+--
+Those are the slide notes
+
+*You can Use the common format*
+
+* And 
+* Lists
+--
+....
+[.notes]
+--
+Those are the slide notes
+
+*You can Use the common format*
+
+* And 
+* Lists
+--
+
+=== Canvas
+
+Press `c` toggle draw mode on slide.
+
+`b` will toggle the chaklboard.

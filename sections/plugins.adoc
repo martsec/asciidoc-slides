@@ -1,0 +1,39 @@
+== Extra Plugins
+We've enabled some plugins 
+
+=== Countdown
+I've added the https://github.com/christer79/reveal_countdown[Countdown.js plugin] to add timers to your slides
+
+Time to finish the slide +++<countdown time="60" autostart="yes" />+++
+
+Use `t` to start/stop timer and `+` and `-` to modify time. 
+
+WARNING: `+` and `-` keys are keyboard-specific so you'll need to change them in `docinfo-footer.html`
+
+[source, asciidoc]
+----
++++<countdown time="60" autostart="yes" />+++
+----
+
+=== Canvasfootnote:[From link:https://github.com/rajgoel/reveal.js-plugins[reveal.js-plugins]]
+
+Press `c` toggle draw mode on slide.
+
+`b` will toggle the chaklboard.
+
+=== Menufootnote:[From link:https://github.com/rajgoel/reveal.js-plugins[reveal.js-plugins]]
+
+Press `m` to obtain the menu.
+
+=== CustomControlsfootnote:[From link:https://github.com/rajgoel/reveal.js-plugins[reveal.js-plugins]]
+
+Those icons on the bottom left!
+
+
+=== Extra plugins to configure
+
+https://github.com/rajgoel/reveal.js-plugins[reveal.js-plugins] provides more plugins that you can make available just modifying `docinfo-footer.html`
+
+* https://github.com/rajgoel/reveal.js-plugins/tree/master/animate[Animations] via SVG.js
+* https://github.com/rajgoel/reveal.js-plugins/tree/master/anything[Anything] for plots via D3.JS and many other things (check https://rajgoel.github.io/reveal.js-demos/anything-demo.html#/[live demo])
+* https://github.com/rajgoel/reveal.js-plugins/tree/master/audio-slideshow[Audio slideshow] for audio playback and recording

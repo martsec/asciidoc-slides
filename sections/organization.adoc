@@ -1,0 +1,286 @@
+////
+Idees de fer organitzacions i columnes
+
+includes
+
+Texts importants
+
+////
+== Layouts
+image::grant-lemons-jTCLppdwSEc-unsplash.jpg[background]
+
+
+
+
+[.columns.is-vcentered]
+=== Layout
+
+[.column.is-one-quarter]
+--
+Use Columns
+--
+[.column]
+--
+Force Layouts 
+
+* `is-three-quarters`
+* `is-two-thirds`
+* `is-half`
+* `is-one-third`
+* `is-one-quarter`
+* `is-full`
+--
+[.column.is-half]
+--
+[source,asciidoc]
+----
+[.columns.is-vcentered]
+=== Layout
+[.column.is-one-quarter]
+Use Columns
+
+
+[.column]
+Force Layouts 
+
+[.column.is-half]
+[source,asciidoc]
+
+----
+--
+
+=== Layout Blocks
+
+Use `--` to encapsulate blocks lasting several lines
+[source,asciidoc]
+----
+[.column]
+--
+Force Layouts 
+
+* `is-three-quarters`
+* `is-two-thirds`
+* `is-half`
+* `is-one-third`
+* `is-one-quarter`
+* `is-full`
+--
+----
+
+=== !
+
+Use `== !` and `=== !` for slides with no headers.
+
+=== Auto-animation
+
+It's really nice. Using just `%auto-animate` and some magic with setting identifiers, you'll have automated animations. Check the examples!
+
+
+=== Examples
+
+Check source code to see how are they done
+
+
+[.columns.is-vcentered]
+=== Network concepts
+
+[.column]
+--
+icon:globe[size=2x]
+
+IP
+
+icon:address-book[size=2x]
+
+DNS
+--
+[.column]
+--
+icon:layer-group[size=2x]
+
+LAYERS
+--
+[.column]
+--
+icon:project-diagram[size=2x] 
+
+LAN/WAN
+
+icon:ethernet[size=2x] 
+
+ROUTER+SWITCH
+--
+
+
+=== Example 2
+
+[.columns%auto-animate]
+=== Options
+[.column]
+--
+icon:docker[set=fab,size=4x]
+
+Docker Compose
+--
+
+[.column]
+--
+image::icons/k8s.png[150,150] 
+
+Kubernetes
+--
+
+[.column]
+--
+image::icons/ECS.png[150,150] 
+
+Elastic Container Service
+--
+
+[.notes]
+--
+There are also many others like openshift
+--
+
+[.columns.is-vcentered%auto-animate]
+=== Docker Compose
+[.column]
+--
+icon:docker[set=fab,size=6x]
+--
+
+[.column.is-two-thirds]
+--
+Docker-maintained tool for
+
+* Defining multi-container Docker applications
+** Services (containers)
+** Healthcheck
+** Volumes 
+** Network
+** Secrets
+* Start all of them with one command
+* Single machine
+--
+
+=== Example 3
+
+[.columns%auto-animate,auto-animate-easing="ease-in-out"]
+=== Recap Data-Intensive applications ideas
+[.column]
+--
+icon:chart-line[size=3x,data-id=scalicon]
+
+[data-id=scaltxt]
+*SCALABILITY*
+--
+[.column]
+--
+icon:plane-departure[size=3x,data-id=relicon]
+
+[data-id=reltxt]
+*RELIABILITY*
+--
+[.column]
+--
+icon:tools[size=3x,data-id=maiicon]
+
+[data-id=maitxt]
+*MAINTAINABILITY*
+--
+
+[.columns%notitle%auto-animate]
+=== Scalability intro
+[.column.is-one-third]
+--
+icon:chart-line[size=3x,data-id=scalicon]
+
+[data-id=scaltxt]
+*SCALABILITY*
+--
+[.column]
+--
+[%step]
+* Measuring Load and Performance
+* Latency, Percentiles throughput
+--
+
+=== Example 4
+
+[.columns%auto-animate]
+=== What does it mean for us? 
+
+[.column]
+--
+.*EC2*
+image::icons/EC2.png[100,100,data-id=ec2] 
+
+_Elastic Compute Cloud_ (VM)
+
+.*RDS*
+image::icons/RDS.png[100,100,data-id=rds]
+
+_Relational Database System_
+--
+[.column]
+--
+.*VPC*
+image::icons/VPC.png[100,100,data-id=vpc] 
+
+_Virtual Private Cloud_ (Networking)
+
+.*IAM*
+image::icons/IAM.png[100,100,data-id=iam] 
+
+_Identity and Access Management_
+--
+
+[%auto-animate]
+=== Activity: AWS console
+[%step]
+* Log in to AWS console
+* Take a look at the offering
+* Check out the services to use
+
+image:icons/EC2.png[100,100,data-id=ec2] 
+image:icons/RDS.png[100,100,data-id=rds]
+image:icons/VPC.png[100,100,data-id=vpc] 
+image:icons/IAM.png[100,100,data-id=iam] 
+
+=== Example 5
+
+[.columns.is-vcentered%auto-animate]
+=== Between VM and Serverless
+[.column]
+--
+image::icons/EC2.png[EC2,150,150]
+
+*Virtual Machines*
+--
+[.column]
+--
+image::icons/Lambda.png[Lambda,150,150]
+
+*Serverless*
+--
+
+[.columns.is-vcentered%auto-animate]
+=== Between VM and Serverless
+[.column]
+--
+image::icons/EC2.png[EC2,150,150]
+
+*Virtual Machines*
+--
+[.column]
+--
+icon:docker[set=fab,size=4x]
+
+*Containers*
+--
+[.column]
+--
+image::icons/Lambda.png[Lambda,150,150]
+
+*Serverless*
+--

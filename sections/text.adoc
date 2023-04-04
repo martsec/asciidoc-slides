@@ -1,0 +1,144 @@
+== Text
+
+=== Important quote
+[quote, "Martin Kleppmann"]
+--
+We engineers must remember that we carry a responsibility to work toward the kind of world that we want to live in: a world that treats people with humanity and respect.
+
+--
+
+=== Quotes
+[quote]
+Use `[quote]` and quote blocks to obtain this
+
+
+[source,asciidoc]
+----
+[quote, "Martin Kleppmann"]
+--
+We engineers ...
+--
+----
+
+=== Admonitionsfootnote:[link:https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/[Admonition docs]]
+
+NOTE: The usual admonition blocks are available using `NOTE`, `TIP`, `IMPORTANT` `CAUTION` `WARNING`
+
+[IMPORTANT] 
+.You can also encase them in a block
+==== 
+[source,asciidoc]
+----
+[IMPORTANT] 
+.You can also encase them in a block
+\====
+(remove the \ )
+\====
+----
+====
+
+
+=== Steps
+
+Make text blocks or list elements appear with `[%step]`
+
+[%step]
+* This
+* Is a
+* List
+
+[%step]
+Or just text
+
+=== Highlight
+
+Lorem [.yellow-highlight]#ipsum# `[.yellow-highlight]\#ipsum#`
+
+Lorem [.highlight-strong.step]#step# ipsum `[.highlight-strong.step]\#step#`
+
+[.important,transition="zoom"]
+=== Important text
+
+=== Important text 
+[source,asciidoc]
+....
+[.important,transition="zoom"]
+=== Important text
+....
+
+[.important%step]
+Also inline in steps
+
+[source,asciidoc]
+....
+[.important%step]
+Also inline in steps
+....
+
+=== Footnotes
+
+`\footnote:[This is a footnote]` footnote:[This is a footnote]
+
+Use `\footnote:reuse[To reuse a footnote]` footnote:reuse[To reuse a footnote]
+
+`\footnote:reuse[]` footnote:reuse[]
+
+.For links in footnotes footnote:[link:https://docs.asciidoctor.org/asciidoc/latest/macros/footnote/[More Info on Footnotes]]
+[source,asciidoc]
+....
+footnote:[link:https://asciidoctor.org[More Info on Footnotesb]]
+....
+
+
+=== A lot of text
+
+Use `[.muchotxt]` for slides or blocks with a lot of text. 
+
+TIP: sometimes it's just better to split the slides
+
+[.muchotxt]
+--
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Ut sem viverra aliquet eget sit. Tellus at urna condimentum mattis. Massa vitae tortor condimentum lacinia. In eu mi bibendum neque egestas congue. Aenean pharetra magna ac placerat vestibulum lectus mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Enim ut sem viverra aliquet. Placerat in egestas erat imperdiet. Facilisi etiam dignissim diam quis enim lobortis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo viverra maecenas accumsan. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Mauris sit amet massa vitae tortor. Tortor aliquam nulla facilisi cras fermentum.
+--
+
+[.muchotxt]
+=== Smaller text in the slide
+
+Also use `[.muchotxt]` applied to the slide title
+
+* Lorem ipsum dolor sit amet, 
+** consectetur adipiscing elit, 
+** sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+* Arcu cursus vitae congue mauris rhoncus aenean vel elit. 
+* Ut sem viverra aliquet eget sit. Tellus at urna condimentum mattis. 
+* Massa vitae tortor condimentum lacinia. 
+* In eu mi bibendum neque egestas congue. 
+* Aenean pharetra magna ac placerat vestibulum lectus mauris. 
+* Pellentesque habitant morbi tristique senectus et netus et malesuada fames. 
+* Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. 
+* Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. 
+* Euismod elementum nisi quis eleifend quam adipiscing vitae proin. 
+* Enim ut sem viverra aliquet.
+
+
+=== Smaller text in the slide
+
+[source,asciidoc]
+----
+
+=== A lot of text
+Use `[.muchotxt]` for slides or blocks with a lot of text. 
+
+TIP: sometimes it's just better to split the slides
+
+[.muchotxt]
+--
+Lorem ipsum dolor sit amet...
+--
+
+[.muchotxt]
+=== A long list
+Also use `[.muchotxt]` applied to the slide title
+
+* Lorem ipsum dolor sit amet, 
+----

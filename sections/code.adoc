@@ -1,0 +1,174 @@
+[.white_bg]
+== Showing Code
+image::james-harrison-vpOeXr5wmR4-unsplash.jpg[background]
+
+
+=== Code blocks
+
+You can use `----` and `\....` to limit code blocks
+
+[source,asciidoc]
+....
+[source]
+----
+pi = 3
+----
+....
+
+=== Syntax highlight
+
+We can use https://highlightjs.org/[highlight.js] library to make our code shine. 
+
+.Choose in the main slide deck all the languages you want to use
+[source,asciidoc]
+----
+:source-highlighter: highlightjs
+:highlightjs-languages: asciidoc,python,yaml,Dockerfile,dockerfile,Bash
+----
+
+.And specify the language in the block
+[source,asciidoc]
+....
+[source, python]
+----
+pi = 3
+----
+....
+
+=== Syntax highlight Result
+
+[source,python]
+----
+pi = 3.1415
+name = "m"
+----
+
+
+=== Do not duplicate code
+.Get your code directly from files!
+[source,asciidoc]
+....
+[source,python]
+----
+\include::../code_examples/flask_app.py[]
+----
+....
+
+.Or just some lines
+[source,asciidoc]
+....
+[source,python]
+----
+\include::../code_examples/flask_app.py[lines=1]
+\include::../code_examples/flask_app.py[lines=6..10]
+----
+....
+
+
+=== !
+[source,python]
+----
+include::../code_examples/flask_app.py[]
+----
+
+[source,python]
+----
+include::../code_examples/flask_app.py[lines=1]
+include::../code_examples/flask_app.py[lines=6..10]
+----
+
+=== Line numbers
+Use `source%linenums` to show line numbers. footnote:[|link:https://asciidoctor.org[test]|]
+
+[source,asciidoc]
+....
+[source%linenums,python]
+----
+\include::../code_examples/flask_app.py[]
+----
+....
+
+=== Line numbers
+[source%linenums,python]
+----
+include::../code_examples/flask_app.py[]
+----
+
+=== Highlight lines of code
+Use `highlight=` to draw the atention to the lines you are explaining.
+
+`,` acts as `and`, `..` is to indicate a line range and `|` indicates different steps.
+
+[source,asciidoc]
+....
+[source,python,highlight="1,6|7..10"]
+----
+\include::../code_examples/flask_app.py[]
+----
+....
+
+WARNING: Don't use `source%linenums` with this since in some cases causes conflicts
+
+=== Highlight lines of code
+
+[source,python,highlight="1,6|7..10"]
+----
+include::../code_examples/flask_app.py[]
+----
+
+[%auto-animate]
+=== Incrementally reveal code
+
+[%auto-animate]
+=== Incrementally reveal code
+[source,python,highlight="1,3",data-id=flask-app]
+----
+include::../code_examples/flask_app.py[lines=1,6]
+----
+
+[%auto-animate]
+=== Incrementally reveal code
+[source,python,highlight="4..7",data-id=flask-app]
+----
+include::../code_examples/flask_app.py[lines=1]
+
+include::../code_examples/flask_app.py[lines=6..10]
+----
+
+[%auto-animate]
+=== Incrementally reveal code
+[source,python,highlight="2..4",data-id=flask-app]
+----
+include::../code_examples/flask_app.py[]
+----
+
+=== How to do it?
+
+Use a combination of `[%auto-animate]` and `data-id=xyz` in different slides
+
+[.muchotxt]
+[source,asciidoc]
+....
+[%auto-animate]
+=== Incrementally reveal code
+[source,python,highlight="1,3",data-id=flask-app]
+----
+\include::../code_examples/flask_app.py[lines=1,6]
+----
+
+[%auto-animate]
+=== Incrementally reveal code
+[source,python,highlight="4..7",data-id=flask-app]
+----
+\include::../code_examples/flask_app.py[lines=1]
+
+\include::../code_examples/flask_app.py[lines=6..10]
+----
+
+[%auto-animate]
+=== Incrementally reveal code
+[source,python,highlight="2..4",data-id=flask-app]
+----
+\include::../code_examples/flask_app.py[]
+----
+....

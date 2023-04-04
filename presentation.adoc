@@ -1,0 +1,80 @@
+= Asciidoctor reveal.js template
+:docinfo: shared
+:author: Marti
+:icons: font
+:imagesdir: images/
+// reveal.js config
+//:revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2
+:revealjsdir: reveal.js
+:customcss: css/reveal-override.css
+:revealjs_theme: white
+:revealjs_hash: true
+:revealjs_width: 1408
+:revealjs_height: 792
+:revealjs_slideNumber: true
+:revealjs_pdfSeparateFragments: false
+:revealjs_controlsBackArrows: faded
+// Highliter
+:source-highlighter: highlightjs
+:highlightjs-languages: asciidoc,python,yaml,Dockerfile,dockerfile,Bash
+//:highlightjs-theme: a11y-dark.css
+// Title
+:title-slide-background-image: change-me.png
+
+_Press icon:long-arrow-alt-right[] for next slide_
+
+== !
+
+This is the template I have been using for all my recent slide decks. 
+
+It's been useful and though it is not perfect, it has everything I need.
+
+Feel free to adapt it to your needs and share it with the community.
+
+[.muchotxt]
+_Template provided under CC BY_
+
+[link=https://creativecommons.org/licenses/by/4.0/]
+image::https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png[height=40]
+
+
+[.notes]
+--
+--
+
+include::sections/controls.adoc[]
+
+include::sections/text.adoc[]
+
+include::sections/organization.adoc[]
+
+include::sections/customization.adoc[]
+
+include::sections/icons_and_images.adoc[]
+
+include::sections/code.adoc[]
+
+include::sections/plugins.adoc[]
+
+[.white_bg]
+== Resources
+image::giammarco-boscaro-zeH-ljawHtg-unsplash.jpg[background]
+
+=== !
+
+* https://docs.asciidoctor.org/asciidoc/latest/[Asciidoctor Docs]
+* https://docs.asciidoctor.org/reveal.js-converter/latest/[Asciidoctor reveal.js Documentation]
+* https://asciidoctor-revealjs-examples.netlify.app/[Asciidoctor reveal.js Examples]
+* https://github.com/hakimel/reveal.js/blob/v3.9/README.md#pdf-export[Reveal.js print to PDF]
+
+* https://bentolor.github.io/java9to13/#/[Just watch this presentation]
+* https://8vi.cat/tag/asciidoctor/[More of my asciidoc articles]
+
+
+== Image Credits
+
+* +++"Showing code" photo by <a href="https://unsplash.com/@jstrippa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Harrison</a> on <a href="https://unsplash.com/photos/vpOeXr5wmR4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>+++
+* +++"Layouts" photo by <a href="https://unsplash.com/@grantlemons?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Grant Lemons</a> on <a href="https://unsplash.com/photos/jTCLppdwSEc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>+++
+* +++"Icons and Images" photo by <a href="https://unsplash.com/@angelekamp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Angèle Kamp</a> on <a href="https://unsplash.com/photos/bDuh4oK_MCU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>+++
+* +++"Background Images contained" photo by <a href="https://unsplash.com/@martinpechy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Martin Péchy</a> on <a href="https://unsplash.com/photos/iXHdGk8JVYU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>+++
+* +++"Resources" photo by <a href="https://unsplash.com/@giamboscaro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Giammarco Boscaro</a> on <a href="https://unsplash.com/photos/zeH-ljawHtg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>+++

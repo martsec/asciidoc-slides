@@ -1,0 +1,77 @@
+[.white_bg]
+== Icons and Images
+image::angele-kamp-bDuh4oK_MCU-unsplash.jpg[background]
+
+
+[.white_bg]
+=== Background images
+image::angele-kamp-bDuh4oK_MCU-unsplash.jpg[background]
+
+[source,asciidoc]
+----
+[.white_bg]
+=== Background images
+image::angele-kamp-bDuh4oK_MCU-unsplash.jpg[background]
+----
+
+
+[.columns.is-vcentered]
+=== Limited height
+[.column]
+[source,asciidoc]
+----
+image::martin-pechy-....jpg[height=600]
+----
+[.column]
+image::martin-pechy-iXHdGk8JVYU-unsplash.jpg[height=600]
+
+[.white_bg]
+=== Background Images contained
+TIP: Use it for screenshots
+
+[source,asciidoc]
+----
+=== !
+image::martin-pechy-....jpg[background, size=contain]
+----
+image::martin-pechy-iXHdGk8JVYU-unsplash.jpg[background, size=contain]
+
+
+
+=== icon:font-awesome[] Font Awesome icons icon:font-awesome[]
+
+With `\icon:font-awesome[]` you can improve the eye cachiness of your slides
+
+icon:search[] https://fontawesome.com/v5/search?q=world&o=r&m=free&f=brands%2Cclassic[v.5.13.0 Free and Brands icons available] icon:search[]
+
+
+
+[.columns.is-vcentered]
+=== icon:font-awesome[] Icon customization icon:font-awesome[]
+[.column]
+--
+Play with the extra variables `size` and `set` for variation as well as your css styles
+
+[source,asciidoc]
+----
+[.red]
+icon:python[set=fab,size=7x]
+----
+.`css/reveal-override.css`
+[source,css]
+----
+/* Main color */
+.icon > i,
+svg {
+   color: #009fe3;
+}
+
+/* Specify custom colors */
+div.red > p > span.icon > i {
+  color: red;
+}
+----
+--
+[.column]
+[.red]
+icon:python[set=fab,size=7x]
